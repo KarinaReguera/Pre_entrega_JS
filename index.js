@@ -20,7 +20,7 @@ const postData = async (url, body) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(body) // Ahora es dinámico
+            body: JSON.stringify(body)
         });
         const data = await response.json();
         console.log('POST response:', data);
@@ -39,7 +39,7 @@ const postData = async (url, body) => {
 
 const deleteData = async (url, id) => {
     try {
-        const response = await fetch(`${url}/${id}`, { // Agregando ID dinámico
+        const response = await fetch(`${url}/${id}`, { 
             method: 'DELETE'
         });
         if (response.ok) {
