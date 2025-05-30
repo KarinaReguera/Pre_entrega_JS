@@ -2,20 +2,23 @@
 Repositorio Karina Reguera. Pre-entrega JS
 
 
-Pre-entrega del proyecto Ja Script: 
+Pre-entrega del proyecto Java Script: 
 
 El objetivo es construir una herramienta funcional para manejar productos de una tienda en línea desde la terminal, utilizando la API FakeStore. 
 
 El sistema interpreta los comandos ingresados en la terminal y ejecutar las siguientes acciones:
 
 npm run start GET products
+
 npm run start GET products/15
+
 npm run start POST products "T-Shirt-Rex" 300 "remeras"
+
 npm run start DELETE products/7
 
 
 
-Configuración inicial:
+-Configuración inicial:
 
 •	Cree  el archivo index.js  para alojar el proyecto y como punto de entrada.
 
@@ -28,7 +31,7 @@ Configuración inicial:
 “descripcion”: “Pre-entrega del proyecto”
 
 
-Gestión de los productos:
+-Gestión de los productos:
 
 Se utiliza fetch para interactuar con la Fake Store API (https://fakestoreapi.com/products) y realizar operaciones básicas de GET, POST y DELETE sobre los productos.
 
@@ -48,9 +51,13 @@ Uso del script:
 El código toma argumentos de la línea de comandos (process.argv.slice(2)) para ejecutar los distintos comandos:
 
 npm run start GET products: Obtiene la data de todos los productos.
+
 npm run start GET products/15: Obtiene la data del producto con Id 15.
+
 npm run start POST products "T-Shirt-Rex" 300 "remeras": Crea un producto.
+
 npm run start DELETE products/7:: Elimina el producto con Id 7.
+
 
 Si el comando ingresado no es GET, POST o DELETE, el script muestra un mensaje de error.
 
