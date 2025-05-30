@@ -40,7 +40,7 @@ La función postData(url, body) envía un nuevo producto a la API.
 Usa fetch con el método POST, un encabezado “Content-Type”: “application/json” y convierte el objeto body a formato JSON antes de enviarlo.
 Al recibir la respuesta, la muestra en la consola.
 
-DELETE: Eliminar un producto:
+• DELETE: Eliminar un producto:
 La función deleteData(url, id) elimina un producto según su ID.
 Usa fetch con el método DELETE y verifica si la eliminación fue exitosa.
 
